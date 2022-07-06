@@ -3,7 +3,7 @@ public interface Aviary {
 
   public void setBirds();
 
-  public boolean isConflict();v
+  public boolean isConflict();
 
   public String printAviary();
 
