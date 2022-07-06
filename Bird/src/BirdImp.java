@@ -37,4 +37,9 @@ public abstract class BirdImp implements Bird{
   public int getNumberOfWings() {
     return this.numberofwings;
   }
+
+  @Override
+  public ArrayList<Food> getFood() {
+    return this.food;
+  }
 }
