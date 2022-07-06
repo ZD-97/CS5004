@@ -1,4 +1,5 @@
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public abstract class BirdImp implements Bird{
 
@@ -6,10 +7,10 @@ public abstract class BirdImp implements Bird{
   private String definingCharacteristic;
   private boolean extinction;
   private int numberofwings;
-  private Array food;
+  private ArrayList<Food> food;
 
   public BirdImp(String type, String definingCharacteristic, boolean extinction, int numberofwings,
-      Array food) {
+      ArrayList<Food> food) {
     this.type = type;
     this.definingCharacteristic = definingCharacteristic;
     this.extinction = extinction;
