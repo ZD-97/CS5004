@@ -20,20 +20,23 @@ public class AviaryImp implements Aviary{
   }
 
   @Override
-  public void setBirds() {
+  public void setBirds(Bird[] birds) {
     if (birds.length > CAPICITY) {
       throw new IllegalArgumentException("No aviary can house more than 5 birds");
     }
     Bird[] newBirds = new Bird[5];
     for (int i = 0; i < birds.length; i++) {
-      newBirds[i] = setBirds(brids);
+      newBirds[i] = birds[i];
     }
-    return null;
+    this.brids = newBirds;
+    this.numOfBirds = birds.length;
   }
 
   @Override
   public boolean isConflict() {
-    return false;
+    for (int i = 0; i < brids.length; i++) {
+
+    }
   }
 
   @Override
