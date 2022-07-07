@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class Owls extends BirdImp{
 
@@ -6,5 +5,4 @@ public class Owls extends BirdImp{
   {
     super(type, "facial disks", extinction, 2, food);
   }
-
-}
+  }
