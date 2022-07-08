@@ -24,4 +24,19 @@ public enum Food {
   public void setQuantity(int quantity) {
     this.quantity = quantity;
   }
+
+  public void addQuantity() {
+    this.quantity++;
+  }
+
+  public static void main(String[] args) {
+    StringBuilder sb = new StringBuilder();
+    for(Food f:Food.values()) {
+      sb.append(f);
+      sb.append(": ");
+      sb.append(f.getQuantity());
+      sb.append("\n");
+    }
+    System.out.println(sb.toString());
+  }
 }

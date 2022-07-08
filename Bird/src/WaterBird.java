@@ -7,7 +7,6 @@ public class WaterBird extends BirdImp {
           super(type, definingCharacteristic, extinction, 2, food);
           this.waterBody = waterBody;
       }
-
       public String getWaterBody() {
         return waterBody;
       }

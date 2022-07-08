@@ -1,5 +1,5 @@
 public interface ConservatoryInterface {
-    public void rescueBird();              // Allow you to rescue new birds and bring them into your conservatory
+    public void rescueBird(Bird bird);              // Allow you to rescue new birds and bring them into your conservatory
     public String calFood();              // calFood : Calculate what food needs to be kept and in what quantities
     public boolean assignBird(Bird bird); //addBird : Assign a bird to an aviary in the conservatory. Assignments must follow the following criteria:
     public int findBird(Bird bird);     // findBird : Have a guest look up which aviary a bird is in
